@@ -44,7 +44,7 @@ function MovieCard(props) {
             <div className="d-flex justify-content-around">
             {
               noOfTicketsAvailable>0?
-          <Link  to={`/user/booking/${movieName}`} state={{ ...props }} ><button className="btn btn-primary">Book</button></Link>
+          <Link  to={`/user/booking/${movieName}`} state={{ movieName,theatreName}} ><button className="btn btn-primary">Book</button></Link>
           :
           <button className="btn btn-primary" disabled>Book</button>
 
